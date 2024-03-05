@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1 class="heading">Weather App</h1>
+        <div class="card">
+            <h2><i class="fa fa-map-marker"></i>
+                <span id="location">
+                    <form>
+                        <input autocomplete="off" id="city_name" name="city_name" type="text" placeholder="City Name"/>
+                        <button type="button" onclick="get_weather();" class="refresh"><i class="fa fa-search"></i></button>
+                    </form>
+                </span>
+            </h2>
+            <h6 id="weather"></h6>
+            <h4><span id="temp"></span></h4>
+            <img src="" alt="" id="icon">
+            <!-- <button onclick="window.location.reload();" class="refresh"><i class="fa fa-refresh"></i></button> -->
+            <button id="btn" onclick="refreshPage();" class="refresh2"><i class="fa fa-refresh"></i></button>
+        </div>
+
+        <p id="copy_right"></p>
+    </div>
+
+    <SCRipt src="script.js"></SCRipt>
 </body>
 </html>

@@ -1,0 +1,126 @@
+:root {
+    --gray: #9c9c9d;
+
+    --dark: #343434;
+
+    --shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+    --shadow_btn: 10px 4px 18px #252525, 5px 5px 18px #4a4a4a;
+}
+* {
+    box-sizing: border-box;
+
+    /* FOR MOBILE CLICKINGS */
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+    outline: none !important;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: var(--dark);
+}
+
+.container {
+    width: 40%;
+}
+.card {
+    border-radius: 50px;
+    background: var(--dark);
+    box-shadow: var(--shadow_btn);
+    padding: 3%;
+    text-align: center;
+}
+
+
+.card h4 {
+    font-weight: 4rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+img#icon {
+    width: 20%;
+}
+h6#weather {
+    text-transform: capitalize;
+}
+
+.refresh2 {
+    opacity: 0;
+}
+.refresh2.active {
+    opacity: 1;
+}
+button.refresh2.active {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    cursor: pointer;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    border: 0;
+    font-size: 20px;
+    border-radius: 50%;
+    box-shadow: var(--shadow_btn);
+    transition: .3s;
+    background: transparent;
+    color: var(--gray);
+}
+button.refresh2:hover {
+    box-shadow: inset var(--shadow_btn);
+}
+button.refresh {
+    position: absolute;
+    top: 46%;
+    left: 60%;
+    cursor: pointer;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    border: 0;
+    font-size: 20px;
+    border-radius: 50%;
+    box-shadow: var(--shadow_btn);
+    transition: .3s;
+    background: transparent;
+    color: var(--gray);
+}
+button.refresh:hover {
+    box-shadow: inset var(--shadow_btn);
+}
+
+#city_name {
+    background-color: var(--dark);
+    height: 30px;
+    width: 50%;
+    margin-top: 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    color: var(--gray);
+}
+
+.heading {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+#copy_right {
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+    bottom: 10px;
+    position: fixed;
+    opacity: 50%;
+}
